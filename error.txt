@@ -1,0 +1,195 @@
+2024-09-24 04:28:55.017 Thread 'Thread-4 (update_metrics)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+Exception in thread Thread-4 (update_metrics):
+Traceback (most recent call last):
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 410, in __getitem__
+    return self._getitem(widget_id, key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 455, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 129, in __getattr__
+    return self[key]
+           ~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 100, in __getitem__
+    return get_session_state()[key]
+           ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/safe_session_state.py", line 94, in __getitem__
+    return self._state[key]
+           ~~~~~~~~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 412, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "metrics". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/src/app.py", line 55, in update_metrics
+    st.session_state.metrics["cpu_usage"] = psutil.cpu_percent()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 131, in __getattr__
+    raise AttributeError(_missing_attr_error_message(key))
+AttributeError: st.session_state has no attribute "metrics". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization
+2024-09-24 04:29:05.038 Thread 'Thread-5 (update_metrics)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+Exception in thread Thread-5 (update_metrics):
+Traceback (most recent call last):
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 410, in __getitem__
+    return self._getitem(widget_id, key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 455, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 129, in __getattr__
+    return self[key]
+           ~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 100, in __getitem__
+    return get_session_state()[key]
+           ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/safe_session_state.py", line 94, in __getitem__
+    return self._state[key]
+           ~~~~~~~~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 412, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "metrics". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/src/app.py", line 55, in update_metrics
+    st.session_state.metrics["cpu_usage"] = psutil.cpu_percent()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 131, in __getattr__
+    raise AttributeError(_missing_attr_error_message(key))
+AttributeError: st.session_state has no attribute "metrics". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization
+2024-09-24 04:29:06.238 Thread 'Thread-6 (update_metrics)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+Exception in thread Thread-6 (update_metrics):
+Traceback (most recent call last):
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 410, in __getitem__
+    return self._getitem(widget_id, key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 455, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 129, in __getattr__
+    return self[key]
+           ~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 100, in __getitem__
+    return get_session_state()[key]
+           ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/safe_session_state.py", line 94, in __getitem__
+    return self._state[key]
+           ~~~~~~~~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 412, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "metrics". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/src/app.py", line 55, in update_metrics
+    st.session_state.metrics["cpu_usage"] = psutil.cpu_percent()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 131, in __getattr__
+    raise AttributeError(_missing_attr_error_message(key))
+AttributeError: st.session_state has no attribute "metrics". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization
+2024-09-24 04:29:40.124 Thread 'Thread-8 (update_metrics)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+Exception in thread Thread-8 (update_metrics):
+Traceback (most recent call last):
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 410, in __getitem__
+    return self._getitem(widget_id, key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 455, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 129, in __getattr__
+    return self[key]
+           ~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 100, in __getitem__
+    return get_session_state()[key]
+           ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/safe_session_state.py", line 94, in __getitem__
+    return self._state[key]
+           ~~~~~~~~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 412, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "metrics". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/src/app.py", line 55, in update_metrics
+    st.session_state.metrics["cpu_usage"] = psutil.cpu_percent()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 131, in __getattr__
+    raise AttributeError(_missing_attr_error_message(key))
+AttributeError: st.session_state has no attribute "metrics". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization
+2024-09-24 04:30:11.016 Thread 'Thread-10 (update_metrics)': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+Exception in thread Thread-10 (update_metrics):
+Traceback (most recent call last):
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 410, in __getitem__
+    return self._getitem(widget_id, key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 455, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 129, in __getattr__
+    return self[key]
+           ~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 100, in __getitem__
+    return get_session_state()[key]
+           ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/safe_session_state.py", line 94, in __getitem__
+    return self._state[key]
+           ~~~~~~~~~~~^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 412, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "metrics". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/src/app.py", line 55, in update_metrics
+    st.session_state.metrics["cpu_usage"] = psutil.cpu_percent()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wahba/Desktop/Vodafone Project/Vodafone-Chatbot/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 131, in __getattr__
+    raise AttributeError(_missing_attr_error_message(key))
+AttributeError: st.session_state has no attribute "metrics". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization

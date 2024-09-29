@@ -1,0 +1,15 @@
+langchain==0.2.14
+langchain-groq==0.1.9
+langchain-community==0.2.12
+streamlit>=1.37.1,<2.0.0
+mysql-connector-python==9.0.0
+python-dotenv==1.0.1
+pandas>=1.5.3,<3.0.0
+matplotlib>=3.5.0,<4.0.0
+pytest==7.4.0
+pytest-asyncio==0.21.1
+black==23.7.0
+isort==5.12.0
+bandit==1.7.5
+coverage==7
+psutil==5.9.5
